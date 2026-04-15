@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --pink: #FF4D8D;
+  --pink-light: #FFB3D1;
+  --pink-pale: #FFF5F0;
+  --pink-border: #FFE8D6;
+  --pink-hover: #FF85B3;
+  --coral: #FF6B6B;
+  --peach: #FFB347;
+  --text-dark: #2D1B2E;
+  --text-medium: #8B6B7A;
+  --text-light: #C4A0B5;
+  --white: #FFFFFF;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #FFF5F0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #C4A0B5;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* PWA safe areas */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
